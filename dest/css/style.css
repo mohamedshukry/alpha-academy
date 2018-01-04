@@ -1,7 +1,13 @@
+.text-color {
+  color: #f1992d; }
+
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 body {
   font-family: 'Slabo 27px', serif; }
+
+.bg-light {
+  background-color: #fff; }
 
 .top-bar {
   background-color: #00aaff;
@@ -40,6 +46,23 @@ body {
     background-color: #002147;
     transform: skew(125deg);
     z-index: -9; }
+
+.navbar .name {
+  width: 100px;
+  color: #00aaff;
+  font-size: 20px;
+  margin-left: -18px; }
+.navbar .navbar-toggler {
+  margin-left: 28px;
+  color: #000; }
+.navbar .tabs .collapse .navbar-nav .nav-item {
+  margin-left: 30px; }
+  .navbar .tabs .collapse .navbar-nav .nav-item .nav-link {
+    color: #002147; }
+  .navbar .tabs .collapse .navbar-nav .nav-item .act {
+    color: #f1992d; }
+  .navbar .tabs .collapse .navbar-nav .nav-item:hover .nav-link {
+    color: #f1992d; }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {

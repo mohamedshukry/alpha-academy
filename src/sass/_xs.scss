@@ -4,7 +4,10 @@ body{
 }
 
 
+.bg-light{
+			background-color: #fff;
 
+	}
 
 .top-bar{
 	background-color: $main-color;
@@ -68,7 +71,39 @@ body{
 
 
 
-
+.navbar{
+	
+	.name{
+		width: 100px;
+		color: $main-color;
+		font-size: 20px;
+		margin-left: -18px;
+	}
+	.navbar-toggler{
+		margin-left: 28px;
+		color: #000;
+	}
+	.tabs{
+		.collapse{
+			.navbar-nav{
+				.nav-item{
+					margin-left: 30px;
+					.nav-link{
+							color: $secondary-color;
+						}
+					.act{
+						color: $third-color;
+					}
+					&:hover{
+						.nav-link{
+							color: $third-color;
+						}
+					}					
+				}
+			}
+		}
+	}
+}
 
 
 
