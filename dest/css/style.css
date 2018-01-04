@@ -1,0 +1,53 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+body {
+  font-family: 'Slabo 27px', serif; }
+
+.top-bar {
+  background-color: #00aaff;
+  padding: 7px 0 0px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 9; }
+  .top-bar ul li {
+    padding: 0 5px; }
+    .top-bar ul li a {
+      color: #FFF;
+      padding: 0px 6px;
+      font-size: 14px; }
+      .top-bar ul li a i {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        padding-top: 7px;
+        background-color: #0088cc;
+        text-align: center; }
+    .top-bar ul li:last-child a {
+      border-right: 0; }
+  .top-bar .list-inline-item:not(:last-child) {
+    margin-right: 2px; }
+  .top-bar .top-bar-right ul li a i {
+    border: #fff;
+    background-color: #002147;
+    border-radius: 50%; }
+  .top-bar:before {
+    position: absolute;
+    right: -100px;
+    top: 0px;
+    content: " ";
+    width: 80%;
+    height: 130%;
+    background-color: #002147;
+    transform: skew(125deg);
+    z-index: -9; }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .top-bar .top-bar-right ul li a i {
+    border: 2px solid #808080; }
+  .top-bar:before {
+    width: 40%; } }
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+
+/*# sourceMappingURL=style.css.map */
