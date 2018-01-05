@@ -1,5 +1,13 @@
 body {
-  font-family: "Ubuntu", sans-serif; }
+  font-family: "Slabo 27px", serif; }
+
+.address {
+  font-family: "Amatic SC", cursive;
+  font-size: 50px;
+  color: #fff; }
+
+.margin-section {
+  padding: 100px; }
 
 a:hover {
   text-decoration: none; }
@@ -53,10 +61,22 @@ p {
   .temp-btn:hover {
     background-color: #00aaff; }
 
+.temp-btn2 {
+  background-color: #d47d11;
+  color: #FFF;
+  width: 170px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 10px 25px;
+  transition: all .5s ease-in-out; }
+  .temp-btn2:hover {
+    background-color: #002147; }
+
 a.temp-btn {
   color: #FFF; }
 
-.carousel-indicators li {
+.demo li {
   width: 15px;
   height: 15px;
   margin: 0 5px;
@@ -65,11 +85,11 @@ a.temp-btn {
   transform: rotate(45deg);
   border: 1px dotted #FFF; }
 
-.carousel-indicators {
+.demo {
   bottom: 30px;
   left: auto;
   right: 0; }
-  .carousel-indicators li.active {
+  .demo li.active {
     background-color: #d47d11; }
 
 /* Extra small devices (phones, less than 576px) */

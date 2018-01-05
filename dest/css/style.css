@@ -1,5 +1,13 @@
 body {
-  font-family: "Ubuntu", sans-serif; }
+  font-family: "Slabo 27px", serif; }
+
+.address {
+  font-family: "Amatic SC", cursive;
+  font-size: 50px;
+  color: #fff; }
+
+.margin-section {
+  padding: 100px; }
 
 a:hover {
   text-decoration: none; }
@@ -53,10 +61,22 @@ p {
   .temp-btn:hover {
     background-color: #00aaff; }
 
+.temp-btn2 {
+  background-color: #d47d11;
+  color: #FFF;
+  width: 170px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 10px 25px;
+  transition: all .5s ease-in-out; }
+  .temp-btn2:hover {
+    background-color: #002147; }
+
 a.temp-btn {
   color: #FFF; }
 
-.carousel-indicators li {
+.demo li {
   width: 15px;
   height: 15px;
   margin: 0 5px;
@@ -65,15 +85,22 @@ a.temp-btn {
   transform: rotate(45deg);
   border: 1px dotted #FFF; }
 
-.carousel-indicators {
+.demo {
   bottom: 30px;
   left: auto;
   right: 0; }
-  .carousel-indicators li.active {
+  .demo li.active {
     background-color: #d47d11; }
 
 /* Extra small devices (phones, less than 576px) */
 /* No media query since this is the default in Bootstrap */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 33, 71, 0.6);
+  z-index: 2; }
+
 header .top-bar {
   background-color: #00aaff;
   padding: 7px 0 0px 0;
@@ -181,16 +208,119 @@ header .navbar-light .navbar-nav .show > .nav-link {
         margin-bottom: 20px; }
         .why-us .about-wrap ul li img {
           width: 100%; }
-    .why-us .about-wrap h2, .why-us .about-wrap a {
+    .why-us .about-wrap h2, .why-us .about-wrap .footor-why-us {
       background-color: #002147;
       color: #FFF;
-      padding: 20px 35px;
+      padding: 10px 35px;
       width: 100%;
-      display: block; }
+      display: block;
+      -webkit-transition: .7s;
+      -moz-transition: .7s;
+      -o-transition: .7s;
+      transition: .7s; }
+      .why-us .about-wrap h2:hover, .why-us .about-wrap .footor-why-us:hover {
+        background-color: #d47d11; }
   .why-us .whyUs-details {
     padding: 40px 0; }
     .why-us .whyUs-details .whyUs-info {
       line-height: 30px; }
+
+.Testimonials {
+  width: 100%; }
+  .Testimonials .prag-Testimonials {
+    padding: 100px 0;
+    color: #6e6e6e; }
+    .Testimonials .prag-Testimonials h2 {
+      color: #d47d11; }
+    .Testimonials .prag-Testimonials .title-seperator {
+      margin: 20px  auto; }
+  .Testimonials .slide {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/p31.jpg") fixed center center;
+    background-repeat: no-repeat; }
+    .Testimonials .slide .carousel-inner .carousel-item .media {
+      padding: 30px 0;
+      text-align: center;
+      flex-direction: column; }
+      .Testimonials .slide .carousel-inner .carousel-item .media img {
+        display: block;
+        margin-left: 35%; }
+      .Testimonials .slide .carousel-inner .carousel-item .media .media-body {
+        height: 220px; }
+        .Testimonials .slide .carousel-inner .carousel-item .media .media-body p {
+          color: #fff;
+          text-align: justify; }
+
+.footor {
+  background-color: #002147; }
+  .footor .top-footor {
+    text-align: center;
+    padding: 50px;
+    border-bottom: 1px dashed #d47d11; }
+    .footor .top-footor p {
+      margin-top: 15px;
+      color: #fff; }
+  .footor .bottom-footor p {
+    padding: 10px 0;
+    color: #fff; }
+    .footor .bottom-footor p span {
+      color: #d47d11; }
+
+/*===========
+contact-us
+==========*/
+.intro {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/p31.jpg") fixed center center;
+  height: 200px;
+  padding: 20% 27%;
+  color: #fff;
+  position: relative; }
+  .intro .Menu {
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.6); }
+    .intro .Menu ul {
+      margin-bottom: 0;
+      margin-left: 0;
+      padding-left: 0;
+      padding: 0 10px; }
+      .intro .Menu ul li {
+        display: inline;
+        list-style-type: none;
+        margin: auto;
+        margin-left: 0; }
+      .intro .Menu ul .active {
+        color: #d47d11; }
+
+.form-contact {
+  padding: 100px 0; }
+  .form-contact h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 20px; }
+  .form-contact .group input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    height: 40px; }
+    .form-contact .group input:focus {
+      border: 0;
+      outline: none;
+      outline: 1px solid #d47d11; }
+  .form-contact .group textarea {
+    width: 100%;
+    margin-bottom: 20px; }
+    .form-contact .group textarea:focus {
+      border: 0;
+      outline: none;
+      outline: 1px solid #d47d11;
+      height: 150px; }
+  .form-contact .group button {
+    width: 170px;
+    height: 50px;
+    border: 0; }
+  .form-contact article {
+    background-color: #002147;
+    color: #fff; }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -201,11 +331,11 @@ header .navbar-light .navbar-nav .show > .nav-link {
     background-size: cover;
     background-position: center center; }
   .slider .carousel .carousel-item .overlay {
-    position: absolute;
+    /*position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 33, 71, 0.6);
-    z-index: 2; }
+    background-color: rgba($main-color,.6);
+    z-index: 2;*/ }
   .slider .carousel .carousel-item .carousel-caption {
     bottom: 20%;
     left: 10%; }
@@ -217,7 +347,20 @@ header .navbar-light .navbar-nav .show > .nav-link {
       line-height: 25px;
       margin: 20px 0;
       font-style: italic;
-      color: #f2f1f1; } }
+      color: #f2f1f1; }
+
+  .Testimonials .carousel .carousel-inner .carousel-item .media {
+    padding: 50px 0;
+    text-align: center;
+    flex-direction: row; }
+    .Testimonials .carousel .carousel-inner .carousel-item .media img {
+      display: block;
+      margin-left: 0%; }
+    .Testimonials .carousel .carousel-inner .carousel-item .media .media-body {
+      height: 220px; }
+
+  .intro {
+    padding: 20% 39%; } }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   header .top-bar:before {

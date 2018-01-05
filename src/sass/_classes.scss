@@ -1,6 +1,14 @@
 body{
     font-family: $font-family;
 }
+.address{
+    font-family: $font-family-h;
+    font-size: 50px;
+    color: #fff;
+}
+.margin-section{
+    padding:100px;
+}
 a:hover{
     text-decoration: none;
 }
@@ -55,8 +63,21 @@ p{
         background-color: $secondary-color;
     }
 }
+.temp-btn2{
+    background-color:  $third-color;
+    color: #FFF;
+    width: 170px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 25px;
+    transition: all .5s ease-in-out;
+    &:hover{
+        background-color:$main-color ;
+    }
+}
 a.temp-btn{color: #FFF;}
-.carousel-indicators li{
+.demo li{
     width: 15px;
     height: 15px;
     margin: 0 5px;
@@ -65,7 +86,7 @@ a.temp-btn{color: #FFF;}
     transform: rotate(45deg);
     border: 1px dotted #FFF;
 }
-.carousel-indicators{
+.demo{
     bottom:30px;
     left: auto;
     right: 0;
