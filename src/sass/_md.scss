@@ -1,0 +1,34 @@
+header{
+	.top-bar{
+		&:before{
+			width: 40%;
+		}
+	}
+}
+.slider{
+	.carousel{
+		.carousel-item{
+			.carousel-caption{
+				bottom: 30%;
+				left: 10%;
+				.carousel-header{
+					font-weight: bold;
+					font-size: 34px;
+				}
+				.carousel-description{
+					font-size: 20px;
+					line-height: 35px;
+					margin: 30px 0;
+				}
+			}
+		}
+	}
+}
+.why-us{
+	.about-wrap{
+		margin-top: -100px;
+	}
+	.whyUs-details{
+		padding: 70px 0;
+	}
+}

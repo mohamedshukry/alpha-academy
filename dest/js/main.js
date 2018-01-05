@@ -1,80 +1,27 @@
-onmouseover
+/* global $ , alert , console*/
+$(function () {
 
-
-$(document).ready(function(){
-	$(".list-group-item1").hover(function(){
-		$(".drop-menu").fadeIn(600);
+// 	//======= change active li onclick it =======//
+	$(".nav li").on("click", function() {
+		$(".nav li").removeClass("active");
+		$(this).addClass("active");
 	});
+
+// 	//======= Adjust Slider Height =======//
+	if ( $(window).width() > 768){
+		var winH    = $(window).height(),
+		    topBar  = $('.top-bar').innerHeight(),
+		    navH    = $('.navigation').innerHeight();
+		$('.slider, .carousel-item-main').height(winH - ( topBar + navH ));
+		}
+
+//     //======= display dropmenu on hover =======//
+    $('ul.nav li.dropdown').hover(function() {
+	  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+	}, function() {
+	  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+	});
+	
+
 });
-
  
-function desabal(){
-var arry = [0,1];
-	function all(){
-		var arryAll=[];
-	}
- return 
-}
-
-var add = (function () {
-    var counter = 0;
-    return function () {return counter += 1;}
-})();
-
-function myFunction(){
-    document.getElementById("demo").innerHTML = add();
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// $(function(){
-// 	$(document).ready(function(){
-// 	    $("#demo").hover(function(){
-// 	        $(this).css("opacity", ".5");
-// 	        }, function(){
-// 	        $(this).css("opacity", "1");
-// 	    });
-// 	});
-// });

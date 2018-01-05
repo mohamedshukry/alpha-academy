@@ -1,0 +1,23 @@
+body{
+	direction: rtl;
+}
+/*Cutomize bootstrap*/
+.float-left{
+	float: right !important;
+}
+.float-right{
+	float: left !important;
+}
+
+.breadcrumb-item{
+	float: right !important;
+}
+.offset-md-2 {
+    margin-left: 0 !important;
+}
+.mr-3, .mx-3{
+	margin-left:1rem !important;
+}
+.text-md-left{
+	text-align: right !important;
+}

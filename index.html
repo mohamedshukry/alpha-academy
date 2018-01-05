@@ -1,107 +1,198 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="content-type" content="text/html" ; charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> alpha</title>
-	<link rel="stylesheet" type="text/css" href="dest/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="dest/css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="dest/css/style.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Alpha Academy</title>
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+	<!-- <link rel="shortcut icon" href="favicon.ico" type="img/x-icon"> -->
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=El+Messiri" rel="stylesheet">
+	<!-- Css -->
+	<link rel="stylesheet" href="dest/css/bootstrap.min.css">
+	<link rel="stylesheet" href="dest/css/font-awesome.min.css">
+	<link rel="stylesheet" href="dest/css/style.css">
+	<!-- <link rel="stylesheet" href="dest/css/rtl.css"> -->
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 </head>
 <body>
-	
-<section class="top-bar">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-sm-12 ">
-          <div class="top-bar-left  ">
-            <ul class="list-inline">
-                    <li class="list-inline-item"><a href="mailto:#"><i class="fa fa-envelope-o"></i> alpha@gmail.com</a></li>
-                    <li class="list-inline-item"><a href="tel:+01004779769"><i class="fa fa-phone"></i>01004779769</a></li>
-                  </ul>
-          </div>
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <div class="top-bar-right text-md-right text-sm-right">
-            <ul class="list-inline">
-                    <li class="list-inline-item">
-                      <a href="#">
-                       <i class="fa fa-facebook" aria-hidden="true"></i>
-                      </a>
-                    
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="#">
-                       <i class="fa fa-twitter" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                     <li class="list-inline-item">
-                      <a href="#">
-                       <i class="fa fa-instagram" aria-hidden="true"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="index-rtl.html">
-                        <i class="fa fa-weixin" aria-hidden="true" style="background-color: transparent;"></i>
-                        عربي
-                      </a>
-                    </li>
-                  </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="container" >
-      <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #fff">
-        <div class="col-sm-12 col-md-6">
+	<header>
+		<!-- Top Bar Section -->
+		<section class="top-bar">
+		    <div class="container">
+		      <div class="row">
+		        <div class="col-md-6 col-sm-12 ">
+		          <div class="top-bar-left  text-md-left">
+		            <ul class="list-inline">
+		              <li class="list-inline-item"><a href="mailto:#"><i class="fa fa-envelope-o"></i> alpha@gmail.com</a></li>
+		              <li class="list-inline-item"><a href="tel:+01004779769"><i class="fa fa-phone"></i>01004779769</a></li>
+		            </ul>
+		          </div>
+		        </div>
+		        <div class="col-md-6 col-sm-12">
+		          <div class="top-bar-right text-md-right text-sm-center">
+		            <ul class="list-inline">
+		              <li class="list-inline-item">
+		                <a href="#">
+		                 <i class="fa fa-facebook " aria-hidden="true"></i>
+		                </a>
+		              </li>
+		              <li class="list-inline-item">
+		                <a href="#">
+		                 <i class="fa fa-twitter" aria-hidden="true"></i>
+		                </a>
+		              </li>
+		               <li class="list-inline-item">
+		                <a href="#">
+		                 <i class="fa fa-instagram" aria-hidden="true"></i>
+		                </a>
+		              </li>
+		              <li class="list-inline-item">
+		                <a href="index-rtl.html">
+		                  عربي
+		                </a>
+		              </li>
+		            </ul>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		</section>
+		<!-- Main Menu -->
+		<div class="navigation">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+				  <a class="navbar-brand" href="index.html">
+				    <img src="dest/img/logo.png" alt="Lorem">
+				  </a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNav">
+				    <ul class="nav navbar-nav ml-auto text-capitalize font-weight-bold">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">About</a>
+						</li>
+						<li class="nav-item dropdown">
+			                <a class="nav-link dropdown-toggle" href="#" id="coursesDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			                   Coures
+			                </a>
+			                <div class="dropdown-menu" aria-labelledby="coursesDrop">
+			                  <a class="dropdown-item font-weight-bold" href="#">Web</a>
+			                  <a class="dropdown-item font-weight-bold" href="#">Ic3</a>
+			                  <a class="dropdown-item font-weight-bold" href="#">Graphics</a>
+			                </div>
+			            </li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact-us.html">Contact us</a>
+						</li>
+				    </ul>
+				  </div>
+				</div>
+			</nav>
+		</div>
+	</header>
 
-        <a class="navbar-brand" href="#"> <img src="dest/img/logo.png"> </a> <span class="name font-weight-bold">alpha acdemy</span>
-        <button class="navbar-toggler border-0 " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        </div>
+	<!-- Slider -->
+	<section class="slider">
+		<div id="indicators" class="carousel slide  d-none d-sm-block" data-ride="carousel">
+			 <ol class="carousel-indicators">
+			    <li data-target="#indicators" data-slide-to="0" class="active"></li>
+			    <li data-target="#indicators" data-slide-to="1"></li>
+			    <li data-target="#indicators" data-slide-to="2"></li>
+			  </ol>
+			<div class="carousel-inner">
+				<div class="carousel-item carousel-item-main active">
+					<div class="overlay"></div>
+					<img class="d-block w-100" src="dest/img/1.jpg" alt="Lorem">
+					<div class="carousel-caption d-none d-sm-block text-left">
+					    <h2 class="carousel-header text-uppercase">Education For all You need</h2>
+					    <p class="carousel-description">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur</p>
+					    <a class="btn temp-btn" href="#">View Courses</a>
+					</div>
+				</div>
+				<div class="carousel-item carousel-item-main">
+					<div class="overlay"></div>
+					<img class="d-block w-100" src="dest/img/1.jpg" alt="Lorem">
+					<div class="carousel-caption d-none d-sm-block text-left">
+					    <h2 class="carousel-header text-uppercase">Education For all You need</h2>
+					    <p class="carousel-description">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur</p>
+					    <a class="btn temp-btn" href="#">View Course</a>
+					</div>
+				</div>
+				<div class="carousel-item carousel-item-main">
+					<div class="overlay"></div>
+					<img class="d-block w-100" src="dest/img/1.jpg" alt="Lorem">
+					<div class="carousel-caption d-none d-sm-block text-left">
+					    <h2 class="carousel-header text-uppercase">Education For all You need</h2>
+					    <p class="carousel-description">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur</p>
+					    <a class="btn temp-btn" href="#">View Courses</a>
+					</div>
+				</div>
 
-        <div class="tabs">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item " >
-              <a class="nav-link act" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">about</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                coures
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">web</a>
-                <a class="dropdown-item" href="#">photo</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">por</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">contact</a>
-            </li>
-          </ul>
-          <!-- <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form> -->
-        </div>
-        </div>
-      </nav>
-      
-    </div>
-  </section>
+			</div>
+		</div>
+	</section>
 
-  </script>
+	<!-- Why us -->
+	<section class="why-us">
+		<div class="container">
+			<div class="row">
+				<div class="col-md">
+					<div class="about-wrap">
+						<h2>Choose Your Favorite Course</h2>
+						<ul class="row list-unstyled">
+							<li class="col-4">
+								<img src="dest/img/course-1.jpg" alt="">
+							</li>
+							<li class="col-4">
+								<img src="dest/img/course-2.jpg" alt="">
+							</li>
+							<li class="col-4">
+								<img src="dest/img/course-3.jpg" alt="">
+							</li>
+							<li class="col-4">
+								<img src="dest/img/course-4.jpg" alt="">
+							</li>
+							<li class="col-4">
+								<img src="dest/img/course-5.jpg" alt="">
+							</li>
+							<li class="col-4">
+								<img src="dest/img/course-1.jpg" alt="">
+							</li>
+							<li class="col-4">
+								<img src="dest/img/course-2.jpg" alt="">
+							</li>
+							<li class="col-4">
+								<img src="dest/img/course-3.jpg" alt="">
+							</li>
+							<li class="col-4">
+								<img src="dest/img/course-4.jpg" alt="">
+							</li>
+						</ul>
+						<a href="#">View All Courses</a>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="whyUs-details">
+						<h3 class="title-section">Why Us</h3>
+						<div class="title-seperator"></div>
+						<p class="whyUs-info paragraph-section">Alpha Academy is a educational Instute. Learning optimize nothing apply easy everytheing means douet pepole want create for usefrull measn gallery differenc accually. No other thant grouping means everyting, People need help fore gaming accually everybody maintain buldrozer shair the world. Work capability for human searching learn people annual examination question paper. So notheing is everything means paerp maintina football gaming we want meet side by side power by acedomaing so helping people means game.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<script src="dest/js/jquery-3.2.1.min.js"></script>
+	<script src="dest/js/popper.min.js"></script>
 	<script src="dest/js/bootstrap.min.js"></script>
 	<script src="dest/js/main.js"></script>
 </body>
