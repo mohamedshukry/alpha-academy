@@ -65,8 +65,12 @@ a.temp-btn {
   transform: rotate(45deg);
   border: 1px dotted #FFF; }
 
-.carousel-indicators li.active {
-  background-color: #d47d11; }
+.carousel-indicators {
+  bottom: 30px;
+  left: auto;
+  right: 0; }
+  .carousel-indicators li.active {
+    background-color: #d47d11; }
 
 /* Extra small devices (phones, less than 576px) */
 /* No media query since this is the default in Bootstrap */

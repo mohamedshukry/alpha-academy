@@ -65,6 +65,11 @@ a.temp-btn{color: #FFF;}
     transform: rotate(45deg);
     border: 1px dotted #FFF;
 }
-.carousel-indicators li.active{
-    background-color: $third-color;
+.carousel-indicators{
+    bottom:30px;
+    left: auto;
+    right: 0;
+    li.active{
+        background-color: $third-color;
+    }
 }
