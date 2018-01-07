@@ -38,7 +38,8 @@ p {
   color: #3b3b3c;
   line-height: 120%;
   font-weight: bold;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: "Amatic SC", cursive; }
 
 .title-seperator {
   height: 3px;
@@ -64,7 +65,7 @@ p {
 .temp-btn2 {
   background-color: #d47d11;
   color: #FFF;
-  width: 170px;
+  width: 230px;
   cursor: pointer;
   text-transform: uppercase;
   border-radius: 0;
@@ -76,7 +77,7 @@ p {
 a.temp-btn {
   color: #FFF; }
 
-.demo li {
+.carousel-indicators li {
   width: 15px;
   height: 15px;
   margin: 0 5px;
@@ -85,12 +86,52 @@ a.temp-btn {
   transform: rotate(45deg);
   border: 1px dotted #FFF; }
 
-.demo {
+.carousel-indicators {
   bottom: 30px;
   left: auto;
   right: 0; }
-  .demo li.active {
+  .carousel-indicators li.active {
     background-color: #d47d11; }
+
+.spac-top {
+  margin-top: 20px; }
+
+hr {
+  background-color: #d47d11; }
+
+.fb-hover:hover {
+  background-color: #3b5998; }
+
+.tw-hover:hover {
+  background-color: #55acee; }
+
+.scrollup {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #d47d11;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #002147;
+  z-index: 1000;
+  transition: opacity .5s, background-color .5s;
+  -moz-transition: opacity .5s, background-color .5s;
+  -webkit-transition: opacity .5s, background-color .5s; }
+  .scrollup:hover {
+    background: #002147;
+    opacity: 1; }
+  .scrollup i {
+    font-size: 13px;
+    position: absolute;
+    opacity: 1;
+    color: #d47d11;
+    left: 50%;
+    top: 50%;
+    margin-top: -7px;
+    margin-left: -6px;
+    text-decoration: none; }
 
 /* Extra small devices (phones, less than 576px) */
 /* No media query since this is the default in Bootstrap */
@@ -214,6 +255,8 @@ header .navbar-light .navbar-nav .show > .nav-link {
       padding: 10px 35px;
       width: 100%;
       display: block;
+      text-align: center;
+      font-size: 30px;
       -webkit-transition: .7s;
       -moz-transition: .7s;
       -o-transition: .7s;
@@ -225,27 +268,48 @@ header .navbar-light .navbar-nav .show > .nav-link {
     .why-us .whyUs-details .whyUs-info {
       line-height: 30px; }
 
-.Testimonials {
-  width: 100%; }
-  .Testimonials .prag-Testimonials {
-    padding: 100px 0;
-    color: #6e6e6e; }
-    .Testimonials .prag-Testimonials h2 {
-      color: #d47d11; }
-    .Testimonials .prag-Testimonials .title-seperator {
-      margin: 20px  auto; }
-  .Testimonials .slide {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/p31.jpg") fixed center center;
-    background-repeat: no-repeat; }
+.Testimonials h2 {
+  color: #d47d11; }
+.Testimonials .title-seperator {
+  margin: 20px  auto; }
+.Testimonials .slide {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/p31.jpg") fixed center center;
+  background-repeat: no-repeat; }
+  .Testimonials .slide .head {
+    padding: 60px 0; }
+    .Testimonials .slide .head h2 {
+      color: #fff;
+      font-size: 38px; }
+    .Testimonials .slide .head .title-seperator {
+      margin: auto; }
+  .Testimonials .slide .carousel-indicators {
+    right: 28%;
+    bottom: 0px; }
+  .Testimonials .slide .carousel-inner .carousel-item {
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -o-transition: .7s;
+    transition: .7s; }
     .Testimonials .slide .carousel-inner .carousel-item .media {
-      padding: 30px 0;
+      padding: 30px 30px;
+      padding-bottom: 30px;
       text-align: center;
-      flex-direction: column; }
+      flex-direction: column;
+      margin-bottom: 40px;
+      background-color: rgba(0, 33, 71, 0.6);
+      border: 2px solid #d47d11;
+      -webkit-transition: .7s;
+      -moz-transition: .7s;
+      -o-transition: .7s;
+      transition: .7s; }
       .Testimonials .slide .carousel-inner .carousel-item .media img {
         display: block;
         margin-left: 35%; }
       .Testimonials .slide .carousel-inner .carousel-item .media .media-body {
-        height: 220px; }
+        height: 180px; }
+        .Testimonials .slide .carousel-inner .carousel-item .media .media-body h5 {
+          color: #fff;
+          font-size: 30px; }
         .Testimonials .slide .carousel-inner .carousel-item .media .media-body p {
           color: #fff;
           text-align: justify; }
@@ -264,6 +328,20 @@ header .navbar-light .navbar-nav .show > .nav-link {
     color: #fff; }
     .footor .bottom-footor p span {
       color: #d47d11; }
+  .footor .bottom-footor ul li a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px 0;
+    display: block;
+    color: #f2f1f1;
+    text-align: center;
+    border: 2px solid #808080;
+    border-radius: 50%;
+    -webkit-transition: all .7s;
+    -moz-transition: all .7s;
+    -o-transition: all .7s;
+    transition: all .7s; }
 
 /*===========
 contact-us
@@ -271,11 +349,15 @@ contact-us
 .intro {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/p31.jpg") fixed center center;
   height: 200px;
-  padding: 20% 27%;
   color: #fff;
   position: relative; }
+  .intro h2 {
+    position: absolute;
+    left: 30%;
+    top: 30%; }
   .intro .Menu {
     position: absolute;
+    left: 30%;
     bottom: 0px;
     background-color: rgba(0, 0, 0, 0.6); }
     .intro .Menu ul {
@@ -308,7 +390,8 @@ contact-us
       outline: 1px solid #d47d11; }
   .form-contact .group textarea {
     width: 100%;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    transition: all 0.7; }
     .form-contact .group textarea:focus {
       border: 0;
       outline: none;
@@ -322,6 +405,167 @@ contact-us
     background-color: #002147;
     color: #fff; }
 
+/*========
+coureses  
+========*/
+.coures {
+  background-color: #f2f1f1;
+  padding-top: 100px; }
+  .coures .coures-group .coures-details h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 20px;
+    margin-top: 40px; }
+  .coures .coures-group .coures-details p {
+    color: #6e6e6e; }
+  .coures .coures-group .coures-details .topices ul {
+    padding-bottom: 50px; }
+    .coures .coures-group .coures-details .topices ul li {
+      float: left;
+      width: 33.33%;
+      list-style-type: none;
+      position: relative;
+      padding-left: 15px; }
+      .coures .coures-group .coures-details .topices ul li:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "\f105";
+        color: #f1992d;
+        font-family: fontawesome; }
+  .coures .coures-group .coures-details button {
+    margin: 30px 0; }
+  .coures article {
+    background-color: #fff; }
+    .coures article .serch h2 {
+      position: relative;
+      padding-left: 15px;
+      margin: 20px 0;
+      text-transform: uppercase; }
+      .coures article .serch h2:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 4px;
+        background: #f1992d;
+        content: ""; }
+    .coures article .serch form .serch-group {
+      position: relative;
+      width: 100%;
+      overflow: hidden; }
+      .coures article .serch form .serch-group input {
+        width: 100%;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        height: 40px; }
+        .coures article .serch form .serch-group input:focus {
+          border: 0;
+          outline: none;
+          outline: 1px solid #d47d11; }
+      .coures article .serch form .serch-group i {
+        position: absolute;
+        top: 1px;
+        right: 16px;
+        width: 30px;
+        height: 63%;
+        padding: 10px;
+        background-color: #d47d11; }
+  .coures .topices h2 {
+    position: relative;
+    padding-left: 15px;
+    margin: 20px 0;
+    text-transform: uppercase; }
+    .coures .topices h2:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 4px;
+      background: #f1992d;
+      content: ""; }
+  .coures .topices ul li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 15px; }
+    .coures .topices ul li:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: "\f105";
+      color: #f1992d;
+      font-family: fontawesome; }
+  .coures .start-date h2 {
+    position: relative;
+    padding-left: 15px;
+    margin: 20px 0;
+    text-transform: uppercase; }
+    .coures .start-date h2:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 4px;
+      background: #f1992d;
+      content: ""; }
+  .coures .start-date h5 {
+    font-family: "Amatic SC", cursive;
+    color: #d47d11;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    /*margin-top: -20px;*/ }
+  .coures .details h2 {
+    position: relative;
+    padding-left: 15px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-size: 30px; }
+    .coures .details h2:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 4px;
+      background: #f1992d;
+      content: ""; }
+  .coures .details p {
+    color: #6e6e6e;
+    padding: 10px; }
+
+/*subscrib*/
+.subscrib {
+  padding: 50px 0;
+  padding-left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/p31.jpg") fixed center center; }
+  .subscrib h2 {
+    color: #fff; }
+  .subscrib form input, .subscrib form select {
+    width: 100%;
+    margin: 20px 0;
+    height: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    border: 1px solid #d47d11;
+    padding: 0px 20px;
+    border-radius: 0px;
+    color: #fff;
+    font-size: 30px; }
+    .subscrib form input:focus, .subscrib form select:focus {
+      border: 0;
+      outline: none;
+      outline: 1px solid #d47d11; }
+    .subscrib form input option, .subscrib form select option {
+      background-color: transparent;
+      color: black; }
+
+/*all-coures*/
+.all-coures .coures-info {
+  padding: 80px 0; }
+  .all-coures .coures-info .post {
+    padding-bottom: 30px; }
+  .all-coures .coures-info img {
+    width: 300px;
+    height: 230px; }
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .slider .carousel .carousel-item img {
@@ -331,11 +575,11 @@ contact-us
     background-size: cover;
     background-position: center center; }
   .slider .carousel .carousel-item .overlay {
-    /*position: absolute;
+    position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba($main-color,.6);
-    z-index: 2;*/ }
+    background-color: rgba(0, 33, 71, 0.6);
+    z-index: 2; }
   .slider .carousel .carousel-item .carousel-caption {
     bottom: 20%;
     left: 10%; }
@@ -349,18 +593,28 @@ contact-us
       font-style: italic;
       color: #f2f1f1; }
 
+  .Testimonials .carousel .carousel-indicators {
+    right: 35%;
+    bottom: 0px; }
   .Testimonials .carousel .carousel-inner .carousel-item .media {
-    padding: 50px 0;
-    text-align: center;
-    flex-direction: row; }
+    padding: 50px 30;
+    text-align: left;
+    flex-direction: row;
+    height: 180px; }
     .Testimonials .carousel .carousel-inner .carousel-item .media img {
       display: block;
       margin-left: 0%; }
-    .Testimonials .carousel .carousel-inner .carousel-item .media .media-body {
-      height: 220px; }
 
-  .intro {
-    padding: 20% 39%; } }
+  .intro h2 {
+    position: absolute;
+    left: 40%;
+    top: 30%; }
+  .intro .Menu {
+    left: 40%; }
+
+  .all-coures .coures-info img {
+    width: 100%;
+    height: 100%; } }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   header .top-bar:before {

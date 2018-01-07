@@ -25,3 +25,15 @@ $(function () {
 
 });
  
+//======= scroll Up =======//
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 150) {
+            $('.scrollup').fadeIn('slow');
+        }else {
+            $('.scrollup').fadeOut('slow');
+        }
+    });
+    $('.scrollup').click(function () {
+        $("html, body").animate({scrollTop: 0}, 2000);
+        return false;
+    });
