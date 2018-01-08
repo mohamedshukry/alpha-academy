@@ -17,7 +17,7 @@ header{
 							width: 22px;
 							height: 22px;
 							line-height: 22px;
-							background-color: #0088cc;
+							background-color: $fourth-color;
 							margin-right:5px;
 							text-align: center;
 							font-size: 14px;
@@ -84,7 +84,7 @@ header{
 				}
 			}
 			.nav-item{
-				padding: 0 20px;
+				padding: 0 10px;
 				.nav-link{			
 					color: $text-color;
 					font-size: 18px;
@@ -153,7 +153,6 @@ header{
 		padding: 40px 0;
 		.whyUs-info{
 			line-height: 30px;
-			
 		}
 	}
 }

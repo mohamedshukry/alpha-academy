@@ -57,13 +57,13 @@ a.temp-btn {
   color: #FFF; }
 
 .carousel-indicators li {
-  width: 15px;
-  height: 15px;
-  margin: 0 5px;
+  width: 20px;
+  height: 20px;
+  margin: 0 7px;
   border-radius: 0%;
   background-color: #002147;
   transform: rotate(45deg);
-  border: 1px dotted #FFF; }
+  border: 2px dotted #FFF; }
 
 .carousel-indicators {
   bottom: 30px;
@@ -137,7 +137,7 @@ header .navigation .navbar {
     header .navigation .navbar .navbar-brand img {
       width: 100%; }
   header .navigation .navbar .nav-item {
-    padding: 0 20px; }
+    padding: 0 10px; }
     header .navigation .navbar .nav-item .nav-link {
       color: #666666;
       font-size: 18px;
@@ -204,7 +204,7 @@ header .navbar-light .navbar-nav .show > .nav-link {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 33, 71, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 2; }
   .slider .carousel .carousel-item .carousel-caption {
     bottom: 20%;
