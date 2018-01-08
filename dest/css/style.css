@@ -136,7 +136,7 @@ hr {
 
 input, select, textarea {
   outline: 0;
-  border: 1px solid #d47d11; }
+  border: 1px solid #808080; }
 
 .modal-dialog {
   margin: 200px auto; }
@@ -345,11 +345,176 @@ header .navbar-light .navbar-nav .show > .nav-link {
   .alpha-works .container .row .step .cont-step h2 {
     font-size: 45px; }
 
+.event {
+  padding-top: 100px; }
+  .event .container h2 {
+    text-align: center; }
+    .event .container h2 span {
+      display: block;
+      font-size: 20px;
+      margin-top: 10px; }
+  .event .container .row {
+    justify-content: space-between;
+    padding-left: 10px; }
+    .event .container .row .sub-event {
+      margin-top: 10px;
+      /*margin: auto;*/
+      margin-bottom: 20px;
+      background-color: #f6f6f6;
+      padding: 30px 30px;
+      transition: all .7s ease-in-out;
+      transform-origin: 50% 0;
+      text-shadow: rgba(0, 0, 0, 0.6); }
+      .event .container .row .sub-event .date {
+        display: block;
+        border-right: 1px solid #fbdada;
+        padding: 0 10px; }
+        .event .container .row .sub-event .date p {
+          font-size: 20px; }
+        .event .container .row .sub-event .date span {
+          display: block;
+          font-size: 15px;
+          margin-top: -25px; }
+      .event .container .row .sub-event .address1 {
+        margin: auto;
+        /*text-transform: uppercase;*/
+        font-size: 30px;
+        color: #002147; }
+      .event .container .row .sub-event .text {
+        padding-left: 80px;
+        color: #6f6f6f; }
+      .event .container .row .sub-event ul li {
+        list-style-type: none;
+        padding-left: 40px;
+        margin-bottom: 10px;
+        color: #a6a4a4; }
+        .event .container .row .sub-event ul li i {
+          padding-right: 20px; }
+      .event .container .row .sub-event:hover {
+        border: 1px solid #d47d11;
+        transform: translateY(-4px); }
+
+footer {
+  background-color: #002147;
+  color: white;
+  padding: 50px 40px;
+  box-sizing: content-box; }
+  footer .row .first h4 {
+    margin-bottom: 40px; }
+  footer .row .first a {
+    color: white;
+    display: block; }
+    footer .row .first a:hover {
+      text-decoration: none; }
+    footer .row .first a .fa-caret-right {
+      padding-right: 10px; }
+  footer .row .first ul {
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    margin-left: -60px; }
+    footer .row .first ul li {
+      list-style-type: none; }
+      footer .row .first ul li a {
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border-radius: 50%;
+        border: 2px solid #808080;
+        line-height: 50px;
+        margin-left: 10px;
+        transition: all .7s ease-in-out; }
+        footer .row .first ul li a:hover {
+          background-color: #00aaff;
+          transform: rotate(360deg); }
+        footer .row .first ul li a i {
+          text-align: center; }
+  footer .row .second {
+    color: white; }
+    footer .row .second h4 {
+      margin-bottom: 60px; }
+    footer .row .second div {
+      width: 270px;
+      height: 70px;
+      border: 1px solid #fff;
+      position: relative;
+      margin-bottom: 30px;
+      transition: all .7s ease-in-out;
+      color: white; }
+      footer .row .second div i {
+        background-color: white;
+        color: #002147;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        font-size: 25px;
+        margin: auto;
+        position: absolute;
+        left: 40%;
+        top: 10px;
+        transition: all .7s ease-in-out; }
+      footer .row .second div p {
+        position: absolute;
+        left: 20%;
+        top: 25px;
+        display: none;
+        font-size: 20px; }
+      footer .row .second div:hover {
+        background-color: white; }
+        footer .row .second div:hover i {
+          top: -20px;
+          background-color: #002147;
+          color: white; }
+        footer .row .second div:hover p {
+          display: block;
+          color: #212121; }
+  footer .row .third {
+    max-width: 100%; }
+    footer .row .third h4 {
+      margin-bottom: 60px; }
+    footer .row .third a {
+      color: white;
+      display: block;
+      margin-bottom: 15px; }
+      footer .row .third a:hover {
+        text-decoration: none; }
+      footer .row .third a i {
+        padding-right: 20px; }
+  footer .row .fourth h4 {
+    margin-bottom: 50px; }
+  footer .row .fourth .row {
+    margin-bottom: 15px; }
+    footer .row .fourth .row .date {
+      width: 50px;
+      height: 50px;
+      background-color: #d47d11;
+      text-align: center;
+      font-size: 25px; }
+      footer .row .fourth .row .date span {
+        display: block;
+        font-size: 13px;
+        margin-top: -10px;
+        text-transform: uppercase; }
+    footer .row .fourth .row .footer-row h6 {
+      margin-left: 10px; }
+    footer .row .fourth .row .footer-row .row .clock {
+      margin-left: 30px;
+      color: #c5c5c5;
+      padding-right: 10px;
+      border-right: 1px solid #6f6f6f; }
+    footer .row .fourth .row .footer-row .row .last {
+      margin-left: 10px;
+      border: 0px; }
+
+/*=========*/
 .footor {
   background-color: #002147; }
   .footor .top-footor {
     text-align: center;
     padding: 50px;
+    border-top: 1px dashed #d47d11;
     border-bottom: 1px dashed #d47d11; }
     .footor .top-footor p {
       margin-top: 15px;
@@ -406,6 +571,25 @@ contact-us
         margin-left: 0; }
       .intro .Menu ul .active {
         color: #d47d11; }
+
+.contact-info ul li {
+  background: #002147;
+  padding: 40px 25px 40px 100px;
+  position: relative;
+  font-size: 15px;
+  color: #fff;
+  list-style-type: none; }
+  .contact-info ul li:nth-child(odd) {
+    background: #072950; }
+  .contact-info ul li span {
+    position: absolute;
+    left: 25px;
+    top: 51%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%); }
+    .contact-info ul li span::before {
+      font-size: 50px; }
 
 .form-contact {
   padding: 100px 0; }
@@ -655,12 +839,13 @@ coureses
       display: block;
       margin-left: 0%; }
 
-  .intro h2 {
-    position: absolute;
-    left: 40%;
-    top: 30%; }
-  .intro .Menu {
-    left: 40%; }
+  /*event */
+  .event .container .row .sub-event {
+    /*        margin-left: 3px;
+    */ }
+
+  footer .row .third {
+    max-width: 15%; }
 
   .all-coures .coures-info img {
     width: 100%;

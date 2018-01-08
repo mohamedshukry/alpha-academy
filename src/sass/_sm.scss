@@ -64,29 +64,157 @@ video{
 	}
 }
 
+/*event */
+.event{
+ 
+  .container{
+    h2{
+      span{
+     
+      
+    }
 
+    }
+    
+    
+    .row{
+     
+      .sub-event{
+/*        margin-left: 3px;
+*/
 
-.intro{
+        .date{
+          
+          p{
+            
+            
+          }
+          span{
+            
+          }
+        }
+        .address{
+         
+        }
+        .text{
+          
+        }
+        ul{
+          
+          li{
+           
 
-	h2{
-	  position: absolute;
-	  left: 40%;
-	  top: 30%;
-	 }
-	.Menu{
-		left: 40%;
-		ul{
-			
-			li{
-				
-			}
-			.active{
-				
-			}
-		}
-	}
+            i{
+              
+            }
+          }
+        }
+       
+      }
+    }
+  }
 }
+footer{
 
+  
+    .row{
+      .first{
+        h4{
+         
+        }
+        a{
+         
+          &:hover{
+            
+          }
+          .fa-caret-right{
+           
+          }
+        }
+        ul{
+         
+          li{
+           
+            a{
+             
+              &:hover{
+                
+              }
+              i{
+                
+              }
+            }
+          }
+        }
+
+      }
+      .second{
+        h4{
+          
+        }
+        div{
+           i{
+            
+          }
+          p{
+            
+          }
+          &:hover{
+           
+            i{
+              
+            }
+            p{
+             
+            }
+          }
+
+        }
+      }
+      .third{
+          max-width: 15%;
+        h4{
+          
+        }
+        a{
+          
+          &:hover{
+             
+          }
+          i{
+            
+          }
+        }
+        
+      }
+      .fourth{
+        h4{
+        }
+        .row{
+          .date{
+            
+            span{
+             
+            }
+          }
+          .footer-row{
+            h6{
+              
+            }
+            .row{
+              .clock{
+                
+              }
+              .last{
+                
+              }
+            }
+          }
+        }
+      }
+    }
+  
+}
 
 .all-coures{
   .coures-info{
@@ -98,3 +226,4 @@ video{
       }
   }
 }
+
