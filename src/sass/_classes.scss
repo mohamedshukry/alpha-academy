@@ -38,6 +38,7 @@ p{
 .title-section{
     color: #3b3b3c;
     line-height: 120%;
+    font-size: 50px;
     font-weight: bold;
     text-transform: uppercase;
     font-family: $font-family-h;
@@ -75,7 +76,7 @@ p{
     transition: all .5s ease-in-out;
     &:hover{
         background-color:$main-color ;
-    }
+            }
 }
 a.temp-btn{color: #FFF;}
 .carousel-indicators li{
@@ -141,4 +142,13 @@ hr{
         margin-left: -6px;
         text-decoration: none;
     }
+}
+input,select,textarea{
+    outline: 0;
+    border: 1px solid $third-color;
+}
+
+
+.modal-dialog{
+    margin: 200px auto;
 }

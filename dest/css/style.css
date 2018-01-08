@@ -37,6 +37,7 @@ p {
 .title-section {
   color: #3b3b3c;
   line-height: 120%;
+  font-size: 50px;
   font-weight: bold;
   text-transform: uppercase;
   font-family: "Amatic SC", cursive; }
@@ -133,6 +134,13 @@ hr {
     margin-left: -6px;
     text-decoration: none; }
 
+input, select, textarea {
+  outline: 0;
+  border: 1px solid #d47d11; }
+
+.modal-dialog {
+  margin: 200px auto; }
+
 /* Extra small devices (phones, less than 576px) */
 /* No media query since this is the default in Bootstrap */
 .overlay {
@@ -141,6 +149,9 @@ hr {
   height: 100%;
   background-color: rgba(0, 33, 71, 0.6);
   z-index: 2; }
+
+video {
+  width: 300px; }
 
 header .top-bar {
   background-color: #00aaff;
@@ -268,6 +279,9 @@ header .navbar-light .navbar-nav .show > .nav-link {
     .why-us .whyUs-details .whyUs-info {
       line-height: 30px; }
 
+.tranparnt {
+  padding: 100px 0; }
+
 .Testimonials h2 {
   color: #d47d11; }
 .Testimonials .title-seperator {
@@ -292,6 +306,8 @@ header .navbar-light .navbar-nav .show > .nav-link {
     transition: .7s; }
     .Testimonials .slide .carousel-inner .carousel-item .media {
       padding: 30px 30px;
+      width: 90%;
+      margin: auto;
       padding-bottom: 30px;
       text-align: center;
       flex-direction: column;
@@ -313,6 +329,21 @@ header .navbar-light .navbar-nav .show > .nav-link {
         .Testimonials .slide .carousel-inner .carousel-item .media .media-body p {
           color: #fff;
           text-align: justify; }
+  .Testimonials .slide .carousel-control-next-icon {
+    color: #d47d11; }
+
+.alpha-works {
+  padding: 100px 0; }
+  .alpha-works .container .row .step .cont-step .carcal {
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    line-height: 110px;
+    margin: 0px auto 20px;
+    color: white;
+    background-color: #002147; }
+  .alpha-works .container .row .step .cont-step h2 {
+    font-size: 45px; }
 
 .footor {
   background-color: #002147; }
@@ -342,6 +373,9 @@ header .navbar-light .navbar-nav .show > .nav-link {
     -moz-transition: all .7s;
     -o-transition: all .7s;
     transition: all .7s; }
+    .footor .bottom-footor ul li a:hover {
+      background-color: #00aaff;
+      border-color: #00aaff; }
 
 /*===========
 contact-us
@@ -379,25 +413,17 @@ contact-us
     text-transform: uppercase;
     font-weight: bold;
     padding-bottom: 20px; }
-  .form-contact .group input {
+  .form-contact input, .form-contact select {
     width: 100%;
     margin-bottom: 20px;
     padding-left: 10px;
     height: 40px; }
-    .form-contact .group input:focus {
-      border: 0;
-      outline: none;
-      outline: 1px solid #d47d11; }
-  .form-contact .group textarea {
+  .form-contact textarea {
     width: 100%;
     margin-bottom: 20px;
-    transition: all 0.7; }
-    .form-contact .group textarea:focus {
-      border: 0;
-      outline: none;
-      outline: 1px solid #d47d11;
-      height: 150px; }
-  .form-contact .group button {
+    transition: all 0.7;
+    height: 150px; }
+  .form-contact button {
     width: 170px;
     height: 50px;
     border: 0; }
@@ -415,9 +441,10 @@ coureses
     text-transform: uppercase;
     font-weight: bold;
     padding-bottom: 20px;
-    margin-top: 40px; }
+    /*margin-top: 40px;*/ }
   .coures .coures-group .coures-details p {
-    color: #6e6e6e; }
+    color: #6e6e6e;
+    padding-bottom: 30px; }
   .coures .coures-group .coures-details .topices ul {
     padding-bottom: 50px; }
     .coures .coures-group .coures-details .topices ul li {
@@ -459,10 +486,6 @@ coureses
         margin-bottom: 20px;
         padding-left: 10px;
         height: 40px; }
-        .coures article .serch form .serch-group input:focus {
-          border: 0;
-          outline: none;
-          outline: 1px solid #d47d11; }
       .coures article .serch form .serch-group i {
         position: absolute;
         top: 1px;
@@ -487,7 +510,13 @@ coureses
   .coures .topices ul li {
     list-style-type: none;
     position: relative;
-    padding-left: 15px; }
+    padding-left: 15px;
+    font-size: 20px; }
+    .coures .topices ul li a {
+      color: #000; }
+      .coures .topices ul li a:hover {
+        text-decoration: underline;
+        color: blue; }
     .coures .topices ul li:before {
       position: absolute;
       left: 0;
@@ -495,6 +524,28 @@ coureses
       content: "\f105";
       color: #f1992d;
       font-family: fontawesome; }
+  .coures .topices ul .modal .modal-dialog {
+    margin: 200px auto; }
+    .coures .topices ul .modal .modal-dialog .modal-content .modal-header {
+      background-color: #00aaff;
+      color: white;
+      position: relative;
+      overflow: hidden; }
+      .coures .topices ul .modal .modal-dialog .modal-content .modal-header h5 {
+        color: white; }
+      .coures .topices ul .modal .modal-dialog .modal-content .modal-header .sek {
+        z-index: 9;
+        overflow: hidden; }
+        .coures .topices ul .modal .modal-dialog .modal-content .modal-header .sek:before {
+          position: absolute;
+          right: -100px;
+          top: 0px;
+          content: " ";
+          width: 60%;
+          height: 130%;
+          background-color: #002147;
+          transform: skew(125deg);
+          z-index: -9; }
   .coures .start-date h2 {
     position: relative;
     padding-left: 15px;
@@ -508,18 +559,20 @@ coureses
       width: 4px;
       background: #f1992d;
       content: ""; }
-  .coures .start-date h5 {
+  .coures .start-date h4 {
     font-family: "Amatic SC", cursive;
     color: #d47d11;
     margin-left: 40px;
     margin-bottom: 20px;
-    /*margin-top: -20px;*/ }
+    /*margin-top: -20px;*/
+    font-size: 30px;
+    font-weight: bold; }
   .coures .details h2 {
     position: relative;
     padding-left: 15px;
     margin: 20px 0;
     text-transform: uppercase;
-    font-size: 30px; }
+    /*font-size: 30px;*/ }
     .coures .details h2:before {
       position: absolute;
       left: 0;
@@ -544,15 +597,9 @@ coureses
     margin: 20px 0;
     height: 50px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    border: 1px solid #d47d11;
     padding: 0px 20px;
-    border-radius: 0px;
     color: #fff;
     font-size: 30px; }
-    .subscrib form input:focus, .subscrib form select:focus {
-      border: 0;
-      outline: none;
-      outline: 1px solid #d47d11; }
     .subscrib form input option, .subscrib form select option {
       background-color: transparent;
       color: black; }
@@ -592,6 +639,9 @@ coureses
       margin: 20px 0;
       font-style: italic;
       color: #f2f1f1; }
+
+  video {
+    width: 500px; }
 
   .Testimonials .carousel .carousel-indicators {
     right: 35%;

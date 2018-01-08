@@ -5,7 +5,9 @@
     background-color: rgba($main-color,.6);
     z-index: 2;
    }
-
+video{
+  width: 300px;
+}
 
 header{
  .top-bar{
@@ -178,22 +180,20 @@ header{
  }
 }
 
+.tranparnt{
+  padding: 100px 0;
+  .vision{
 
-.Testimonials {
- 
- 
-  
+  }
+}
+
+.Testimonials { 
   h2{
    color: $third-color;
   }
   .title-seperator{
    margin:20px  auto;
-
   }
-  
- 
- 
- 
  .slide{
   background: linear-gradient(rgba( 0,0,0,.5   ), rgba(0,0,0,.5)), url("../img/p31.jpg") fixed center center;
  background-repeat: no-repeat;
@@ -219,6 +219,8 @@ header{
    transition: .7s;
     .media{
      padding: 30px 30px;
+     width: 90%;
+     margin: auto;
      padding-bottom: 30px;
      text-align: center;
      flex-direction: column;
@@ -249,9 +251,36 @@ header{
     }
    }
   }
+  .carousel-control-next-icon{
+    color: $third-color;
+  }
  }
 }
+.alpha-works{
+  padding: 100px 0;
+  .container{
+    .row{
+      .step{
+        .cont-step{
+          .carcal{
+            height: 110px;
+            width: 110px;
+            border-radius: 50%;
+            line-height: 110px;
+            
+            margin: 0px auto 20px;
+            color: white;
+            background-color: $main-color;
 
+          }
+          h2{
+            font-size: 45px;
+          }
+        }
+      }
+    }
+  }
+}
 .footor{
  background-color: $main-color;
  .top-footor{
@@ -290,7 +319,10 @@ header{
       -moz-transition: all .7s;
       -o-transition: all .7s;
       transition: all .7s;
-      
+      &:hover{
+        background-color:$secondary-color;
+       border-color: $secondary-color;
+      }
      }
     
     }
@@ -348,16 +380,14 @@ header{
   font-weight: bold;
   padding-bottom: 20px;
  }
- .group{
-  input{
+ 
+  input, select{
    width: 100%;
    margin-bottom: 20px;
    padding-left: 10px;
    height: 40px;
    &:focus{
-    border:0;
-    outline:none;
-    outline: 1px solid $third-color;
+    
    }
   }
   textarea{
@@ -365,11 +395,9 @@ header{
    width: 100%;
    margin-bottom: 20px;
    transition: all .7 ;
+   height: 150px;
    &:focus{
-    border:0;
-    outline:none;
-    outline: 1px solid $third-color;
-    height: 150px;
+  
    }
   }
   button{
@@ -377,7 +405,7 @@ header{
    height: 50px;
    border: 0;
   }
- }
+ 
  article{
   background-color: $main-color;
   color: #fff;
@@ -399,10 +427,11 @@ header{
     text-transform: uppercase;
     font-weight: bold;
     padding-bottom: 20px;
-    margin-top: 40px;
+    /*margin-top: 40px;*/
    }
    p{
     color: #6e6e6e;
+    padding-bottom: 30px;
    }
    .topices{
     ul{
@@ -457,11 +486,10 @@ header{
      margin-bottom: 20px;
      padding-left: 10px;
      height: 40px;
+
      
      &:focus{
-      border:0;
-      outline:none;
-      outline: 1px solid $third-color;
+      
      }
     }
     i{
@@ -483,6 +511,7 @@ header{
    padding-left: 15px;
    margin: 20px 0;
    text-transform: uppercase;
+
    &:before{
            position: absolute;
         left: 0;
@@ -499,6 +528,16 @@ header{
       list-style-type: none;
       position: relative;
       padding-left: 15px;
+      font-size: 20px;
+      a{
+    color: #000;
+
+        &:hover{
+          text-decoration:underline;
+          color: blue;
+        }
+        }
+
       &:before{
            position: absolute;
            left: 0;
@@ -508,6 +547,37 @@ header{
            font-family: fontawesome;
       }
     }
+     .modal{
+          .modal-dialog{
+            margin: 200px auto;
+            .modal-content{
+              .modal-header{
+                background-color: $secondary-color;
+                color: white;
+                position: relative;
+                overflow: hidden;
+                h5{
+                  color: white;
+                }
+                .sek{
+                  z-index: 9;
+                  overflow: hidden;
+                  &:before{
+                 position: absolute;
+                 right: -100px;
+                 top: 0px;
+                 content: " ";
+                 width: 60%;
+                 height: 130%;
+                 background-color: $main-color;
+                 transform: skew(125deg);
+                 z-index: -9;
+                }
+                }
+              }
+            }
+          }
+        }
   }
       }
       .start-date{
@@ -526,12 +596,14 @@ header{
                 content: "";
              }
         }
-        h5{
+        h4{
           font-family: $font-family-h;
           color: $third-color;
           margin-left: 40px;
           margin-bottom: 20px;
           /*margin-top: -20px;*/
+          font-size: 30px;
+          font-weight: bold;
         }
       }
       .details{
@@ -540,7 +612,7 @@ header{
            padding-left: 15px;
            margin: 20px 0;
            text-transform: uppercase;
-           font-size: 30px;
+           /*font-size: 30px;*/
            &:before{
                    position: absolute;
                 left: 0;
@@ -573,16 +645,12 @@ header{
           width: 100%;
           margin: 20px 0;
           height: 50px;
-          background: linear-gradient(rgba( 0,0,0,.5   ), rgba(0,0,0,.5));
-          border: 1px solid $third-color;
+          background: linear-gradient(rgba( 0,0,0,.5   ), rgba(0,0,0,.5));          
           padding:0px 20px;
-          border-radius:0px;
           color: #fff;
           font-size: 30px;
           &:focus{
-              border:0;
-              outline:none;
-              outline: 1px solid $third-color;
+             
              }
              option{
               background-color:transparent;

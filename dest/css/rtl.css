@@ -37,6 +37,7 @@ p {
 .title-section {
   color: #3b3b3c;
   line-height: 120%;
+  font-size: 50px;
   font-weight: bold;
   text-transform: uppercase;
   font-family: "Amatic SC", cursive; }
@@ -132,6 +133,13 @@ hr {
     margin-top: -7px;
     margin-left: -6px;
     text-decoration: none; }
+
+input, select, textarea {
+  outline: 0;
+  border: 1px solid #d47d11; }
+
+.modal-dialog {
+  margin: 200px auto; }
 
 /* Extra small devices (phones, less than 576px) */
 /* No media query since this is the default in Bootstrap */
