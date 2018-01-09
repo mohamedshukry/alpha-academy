@@ -141,6 +141,22 @@ input, select, textarea {
 .modal-dialog {
   margin: 200px auto; }
 
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-size: 20px;
+  font-style: normal;
+  margin-left: 0px; }
+
+.flaticon-smartphone:before {
+  content: "\f103"; }
+
+.flaticon-opened-email-envelope:before {
+  content: "\f102"; }
+
+.flaticon-placeholder:before {
+  content: "\f101"; }
+
 /* Extra small devices (phones, less than 576px) */
 /* No media query since this is the default in Bootstrap */
 body {

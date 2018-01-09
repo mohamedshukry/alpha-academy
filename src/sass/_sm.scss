@@ -64,6 +64,26 @@ video{
 	}
 }
 
+.alpha-works{
+ 
+  .container{
+    .row{
+      .step{
+        .cont-step{
+          .carcal{
+           
+
+          }
+          h2{
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 /*event */
 .event{
  
@@ -227,3 +247,28 @@ footer{
   }
 }
 
+
+
+.subscrib{
+
+     h2{
+     }
+      form{
+        input,select{
+         
+          &:focus{
+             
+             }
+             option{
+             
+             }
+        }
+      }
+      .photo{
+        img{
+          width: 400px;
+        
+          margin-left: 20%;
+        }
+      }
+}

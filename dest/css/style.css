@@ -141,6 +141,22 @@ input, select, textarea {
 .modal-dialog {
   margin: 200px auto; }
 
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-size: 20px;
+  font-style: normal;
+  margin-left: 0px; }
+
+.flaticon-smartphone:before {
+  content: "\f103"; }
+
+.flaticon-opened-email-envelope:before {
+  content: "\f102"; }
+
+.flaticon-placeholder:before {
+  content: "\f101"; }
+
 /* Extra small devices (phones, less than 576px) */
 /* No media query since this is the default in Bootstrap */
 .overlay {
@@ -151,7 +167,8 @@ input, select, textarea {
   z-index: 2; }
 
 video {
-  width: 300px; }
+  width: 100%;
+  height: 250px; }
 
 header .top-bar {
   background-color: #00aaff;
@@ -343,7 +360,8 @@ header .navbar-light .navbar-nav .show > .nav-link {
     color: white;
     background-color: #002147; }
   .alpha-works .container .row .step .cont-step h2 {
-    font-size: 45px; }
+    font-size: 30px;
+    text-transform: uppercase; }
 
 .event {
   padding-top: 100px; }
@@ -787,6 +805,11 @@ coureses
     .subscrib form input option, .subscrib form select option {
       background-color: transparent;
       color: black; }
+  .subscrib .photo img {
+    width: 350px;
+    margin: auto;
+    margin-top: 30%;
+    /*margin-left: 20%;*/ }
 
 /*all-coures*/
 .all-coures .coures-info {
@@ -839,6 +862,9 @@ coureses
       display: block;
       margin-left: 0%; }
 
+  .alpha-works .container .row .step .cont-step h2 {
+    font-size: 25px; }
+
   /*event */
   .event .container .row .sub-event {
     /*        margin-left: 3px;
@@ -849,7 +875,11 @@ coureses
 
   .all-coures .coures-info img {
     width: 100%;
-    height: 100%; } }
+    height: 100%; }
+
+  .subscrib .photo img {
+    width: 400px;
+    margin-left: 20%; } }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   header .top-bar:before {
