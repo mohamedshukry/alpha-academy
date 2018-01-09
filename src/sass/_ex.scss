@@ -812,8 +812,12 @@ footer{
     }
      .modal{
           .modal-dialog{
-            margin: 200px auto;
+            margin-top:  200px ;
+            transition: all 2s;
             .modal-content{
+              .modal-body{
+                padding: 50px;
+              }
               .modal-header{
                 background-color: $secondary-color;
                 color: white;
@@ -835,6 +839,9 @@ footer{
                  background-color: $main-color;
                  transform: skew(125deg);
                  z-index: -9;
+                }
+                button{
+                  color: white;
                 }
                 }
               }

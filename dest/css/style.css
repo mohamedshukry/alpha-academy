@@ -139,7 +139,7 @@ input, select, textarea {
   border: 1px solid #808080; }
 
 .modal-dialog {
-  margin: 200px auto; }
+  /*margin: 200px auto;*/ }
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
@@ -727,7 +727,10 @@ coureses
       color: #f1992d;
       font-family: fontawesome; }
   .coures .topices ul .modal .modal-dialog {
-    margin: 200px auto; }
+    margin-top: 200px;
+    transition: all 2s; }
+    .coures .topices ul .modal .modal-dialog .modal-content .modal-body {
+      padding: 50px; }
     .coures .topices ul .modal .modal-dialog .modal-content .modal-header {
       background-color: #00aaff;
       color: white;
@@ -748,6 +751,8 @@ coureses
           background-color: #002147;
           transform: skew(125deg);
           z-index: -9; }
+        .coures .topices ul .modal .modal-dialog .modal-content .modal-header .sek button {
+          color: white; }
   .coures .start-date h2 {
     position: relative;
     padding-left: 15px;
@@ -902,5 +907,13 @@ coureses
     padding: 70px 0; } }
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .intro h2 {
+    position: absolute;
+    left: 50%;
+    top: 30%; }
+  .intro .Menu {
+    left: 50%;
+    bottom: 0; } }
 
 /*# sourceMappingURL=style.css.map */
