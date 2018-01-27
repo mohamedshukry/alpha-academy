@@ -32,3 +32,76 @@ header{
 		padding: 70px 0;
 	}
 }
+.Testimonials { 
+  h2{
+
+  }
+  .title-seperator{
+
+  }
+ .slide{
+ 
+   .head{
+
+      h2{
+       
+       }
+     .title-seperator{
+       }
+      }
+   .carousel-indicators{
+   
+    bottom: 15px;
+   }   
+  .carousel-inner{
+   .carousel-item{
+    
+    .media{
+    
+      
+     img{
+      
+     }
+     .media-body{
+      
+      h5{
+      
+      }
+      p{
+       
+      }
+     }
+    }
+   }
+  }
+  .carousel-control-next-icon{
+    
+  }
+  .carousel-control-prev-icon{
+    
+  }
+ }
+}
+.news{
+  padding: 100px 0;
+  .news-card{
+    height: 450px;
+    .card{
+     
+      .card-img-top{
+     
+      }
+      .card-body{
+        background-color: white;
+        position: absolute;
+       bottom: -230px;
+      }
+    }
+    &:first-child{
+      margin-right: 30px;
+    }
+    &:last-child{
+      margin-left: 30px;
+    }
+  }
+}

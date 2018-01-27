@@ -138,6 +138,9 @@ header{
  }
  .whyUs-details{
   padding: 40px 0;
+    h3{
+      font-family:$font-ar;
+    }
   
   .whyUs-info{
    line-height: 30px;
@@ -156,7 +159,7 @@ header{
  .slide{
  
    .head{
-  
+    
       h2{
       font-family: $font-ar;
        }
@@ -201,7 +204,16 @@ header{
   }
  }
 }
-
+.alpha-works{
+  .container{
+    
+      h2{
+        font-family: $font-ar;
+        color: red;
+      }
+   
+  }
+}
 .event{
 	
 	.container{
