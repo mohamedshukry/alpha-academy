@@ -1,0 +1,181 @@
+body{
+    font-family: $font-family;
+}
+.sticky {
+    position: relative;
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  background-color: white;
+  z-index: 9999;
+}
+.address{
+    font-family: $font-family-h;
+    font-size: 50px;
+    color: #fff;
+}
+.activ{
+    color: $third-color;
+}
+.margin-section{
+    padding:100px;
+}
+a:hover{
+    text-decoration: none;
+}
+a.focus, a:focus,.form-control:focus{
+    box-shadow: none;
+    outline: 0;
+}
+.btn.focus, .btn:focus{
+    box-shadow: none;
+    outline: 0;
+}
+.navbar-toggler:focus{
+    border: 1px solid $secondary-color;
+    outline: 0;
+}
+button.focus , button:focus{
+    box-shadow: none;
+    outline: 0;
+}
+p{
+    line-height: 1.6;
+}
+.form-control{
+    resize: none;
+}
+
+.title-section{
+    color: #3b3b3c;
+    line-height: 120%;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: $font-family-h;
+}
+.title-seperator{
+    height: 3px;
+    width: 80px;
+    background-color: $third-color;
+    margin: 10px 0 30px 0;
+}
+.paragraph-section{
+    color: #6e6e6e;
+    font-size: 16px;
+}
+.temp-btn{
+    background-color: $main-color;
+    color: #FFF;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 25px;
+    transition: all .5s ease-in-out;
+    &:hover{
+        background-color: $secondary-color;
+    }
+}
+.temp-btn2{
+    background-color:  $third-color;
+    color: #FFF;
+    width: 230px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 25px;
+    transition: all .5s ease-in-out;
+    &:hover{
+        background-color:$main-color ;
+            }
+}
+a.temp-btn{color: #FFF;}
+.carousel-indicators li{
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    border-radius: 0%;
+    background-color: $main-color;
+    transform: rotate(45deg);
+    border: 1px dotted #FFF;
+}
+.carousel-indicators{
+    bottom:30px;
+    left: auto;
+    right: 0;
+    li.active{
+        background-color: $third-color;
+    }
+}
+.spac-top{
+    margin-top: 20px;
+}
+hr{
+    background-color: $third-color;
+}
+.fb-hover{
+    &:hover{
+        background-color:$fb-color;
+    }
+}
+.tw-hover{
+    &:hover{
+        background-color:$tw-color;
+    }
+}
+
+.scrollup{
+    width: 40px;
+    height: 40px;
+    border: 2px solid $third-color;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    color: #fff;
+    cursor: pointer;
+    background-color:$main-color;
+    z-index: 1000;
+    transition: opacity .5s, background-color .5s;
+    -moz-transition: opacity .5s, background-color .5s;
+    -webkit-transition: opacity .5s, background-color .5s;
+    &:hover{
+        background: $main-color;
+        opacity: 1;
+    }
+    i {
+        font-size: 13px;
+        position: absolute;
+        opacity: 1;
+        color: $third-color;
+        left: 50%;
+        top: 50%;
+        margin-top: -7px;
+        margin-left: -6px;
+        text-decoration: none;
+    }
+}
+input,select,textarea{
+    outline: 0;
+    border: 1px solid $border-color;
+}
+
+
+.modal-dialog{
+    /*margin: 200px auto;*/
+}
+
+
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+    font-family: Flaticon;
+    font-size: 20px;
+    font-style: normal;
+    margin-left: 0px;
+}
+.flaticon-smartphone:before { content: "\f103"; };
+.flaticon-opened-email-envelope:before {
+    content: "\f102";};
+ .flaticon-placeholder:before {
+    content: "\f101";}   
